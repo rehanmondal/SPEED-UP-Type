@@ -14,7 +14,7 @@ def typetest():
     user_test = request.form.get('fronttest')
     mistake_total = mc.mistake_count(random_paragraph,user_test)
 
-    return render_template('main.html',mistake_total=mistake_total,random_paragraph=random_paragraph)
+    return render_template('main.html',mistake_total=mistake_total,random_paragraph=random_paragraph,len_of_original=len(random_paragraph))
 
 if __name__ == '__main__':
     app.run(debug=True)

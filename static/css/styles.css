@@ -568,3 +568,22 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+#countdown{
+   background-color:#840000  ;
+   color:white;
+   font-size: 25px;
+   height:40px;
+   width:120px;
+   display:inline-flex;
+   align-items:center;
+   justify-content:center;
+   margin-left:510px;
+
+
+}
+input{
+   width:100px;
+   height:30px;
+   background-color"darkblue;"
+}
