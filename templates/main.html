@@ -1,0 +1,75 @@
+
+<!--    NEED TO ORGANISE CSS FIEL , MUCH UN NECESSARY -->
+
+
+<!DOCTYPE html>
+<html class="no-js" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Speed Up Typing Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/styles.css')}}" />
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename = 'rehan_fav.ico')}}" />
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- FONTAWESOME -->
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!-- HEADER SECTION -->
+        <header>
+            <div class = "navigation-container">
+                <div class = "top-head">
+                    <div class = "web-name">
+                        <h1 align="center">SPEED>UP</h1>
+                    </div>
+                </div>
+                <!-- NAV BAR SECTION -->
+                <div class = "nav-bar" id = "nav-bar">
+                    <nav>
+                      <h2 style="margin-left:400px; color:yellow;">Start Typing Today</h2>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <br><br>
+    <div style="margin-left: 65px;">
+        <h2 style="color:DarkBlue; margin-left:200px;">Type this paragraph :</h2>
+        <p id="countdown" align="center">Clock</p>
+        <script src="{{ url_for('static',filename = 'js/clockjs.js')}}"></script>
+    </div>
+    <br>
+        <p id="rcorners2">
+             {{random_paragraph}}
+        </p>
+    <form action="/" method="post">
+              <textarea rows="10" cols="76" style="margin-left:255px;" name="fronttest"></textarea>
+ <section class = "banner">
+     <div class = "banner-main-content" align="left">
+    </div>
+    <div class = "banner-main-content" align="center">
+        <input type="submit" value="Done">
+         </div>
+    </section>
+    </form>
+
+        <footer>
+            <div class = "footer-container">
+                <div class = "footer-left">
+                    <h2>SPEED>UP</h2>
+                    <p>About Me : <br>Rehan Mondal<br>Web Developer<br>From Inda,W.B.</p>
+                </div>
+
+                <div class = "footer-right">
+                    <h2>Connect: </h2><br>
+                    <a href="https://github.com/rehanmondal" style="color:white" target="_blank">Github</a><br><a href="https://www.linkedin.com/in/rehanmondal01" target="_blank" style="color:white;">Linkedin</a></p>
+                </div>
+            </div>
+            <p>Copyright &copy; 2023 All rights reserved</p>
+        </footer>
+        <script src="{{ url_for('static',filename = 'js/script.js')}}" async defer></script>
+    </body>
+</html>
+
